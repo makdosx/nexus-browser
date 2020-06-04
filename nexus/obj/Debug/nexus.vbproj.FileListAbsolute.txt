@@ -1,0 +1,12 @@
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.vbprojAssemblyReference.cache
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.Form1.resources
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.Resources.resources
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.vbproj.GenerateResource.cache
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.vbproj.CoreCompileInputs.cache
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\nexus.exe.config
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\nexus.exe
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\nexus.pdb
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\nexus.xml
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.exe
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.xml
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.pdb
