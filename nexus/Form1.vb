@@ -1,4 +1,24 @@
-﻿Public Class Form1
+'
+' Copyright (c) 2020 Barchampas Gerasimos <makindosx@gmail.com>.
+' nexus-browser is a anonymous and vpn browser.
+'
+' nexus-browser Is free software: you can redistribute it And/Or modify
+' it under the terms of the GNU Affero General Public License as
+' published by the Free Software Foundation, either version 3 of the
+' License, Or (at your option) any later version.
+'
+'
+' nexus-browser Is distributed in the hope that it will be useful,
+' but WITHOUT ANY WARRANTY; without even the implied warranty of
+' MERCHANTABILITY Or FITNESS FOR A PARTICULAR PURPOSE. See the
+' GNU Affero General Public License for more details.
+'
+' You should have received a copy of the GNU Affero General Public License, version 3,
+' along with this program.  If Not, see <http://www.gnu.org/licenses/>
+'
+'
+
+Public Class Form1
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         WebBrowser1.GoForward()
     End Sub
