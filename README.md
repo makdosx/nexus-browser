@@ -2,7 +2,7 @@
 Nexus-Browser is a anonymous and vpn browser <br><br>
 
 Properties and Details <br><br>
-1) Support all windows operating systems after windows xp <br> windows xp, vista, 7, 8, 8.1, 10 <br> 
+1) Supports all windows operating systems after windows xp <br> windows xp, vista, 7, 8, 8.1, 10 <br> 
 2) Anonymous browsing with socks vpn. <br> 
 3) Anonymous activity (no save cookies, ip, location etc) <br> 
 4) Support many windows for fast and safe browsing <br>
