@@ -15,4 +15,8 @@ Properties and Details <br><br>
  
 <a href="download/nexus.exe"> Download </a> <br/>
 
-![nexus-browser](imgs/nexus-browser.png) <br/><br/> 
+![nexus-browser1](imgs/nexus-browser1.png) <br/><br/> 
+
+![nexus-browser-vpn1](imgs/nexus-browser-vpn1.png) <br/><br/> 
+
+![nexus-browser-vpn2](imgs/nexus-browser-vpn2.png) <br/><br/> 
