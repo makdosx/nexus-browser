@@ -175,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="nexus.ico" />
+    <None Include="Resources\action_stop.gif" />
+    <None Include="Resources\action_go.gif" />
+    <None Include="Resources\page_lock.gif" />
     <None Include="Resources\icon_get_world.gif" />
     <None Include="Resources\ny-times.png" />
     <None Include="Resources\the-times.jpg" />

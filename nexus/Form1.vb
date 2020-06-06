@@ -1,5 +1,5 @@
-'
-' Copyright (c) 2020 Barchampas Gerasimos <makindosx@gmail.com>.
+﻿'
+' Copyright (c) 2020 Barchampas Gerasimos <makindosxx@gmail.com>.
 ' nexus-browser is a anonymous and vpn browser.
 '
 ' nexus-browser Is free software: you can redistribute it And/Or modify
@@ -24,7 +24,7 @@ Public Class Form1
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-      
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -52,7 +52,7 @@ Public Class Form1
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted_1(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
-        'WebBrowser1.Navigate("https://www.microsoft.com")
+        'WebBrowser1.Url = New Uri("https://ipinfo.io/what-is-my-ip")
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -159,5 +159,45 @@ Public Class Form1
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        If Not IO.Directory.Exists(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector") Then
+
+            IO.Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector")
+
+
+        End If
+
+
+        IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.pbk"), "[VPN]" & vbNewLine & "MEDIA=rastapi" & vbNewLine & "Port=VPN2-0" & vbNewLine & "Device=WAN Miniport (IKEv2)" & vbNewLine & "DEVICE=vpn" & vbNewLine & "PhoneNumber=" & "ca222.vpnbook.com")
+        IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.bat"), "rasdial ""VPN"" " & "vpnbook" & " " & "dA9rJds" & " /phonebook:" & """" & System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.pbk" & """")
+
+
+        Dim connect As System.Diagnostics.Process
+        connect = New System.Diagnostics.Process()
+        connect.StartInfo.FileName = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.bat"
+        connect.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+
+        connect.Start()
+        connect.WaitForExit()
+
+        WebBrowser1.Url = New Uri("https://whatismyipaddress.com/")
+    End Sub
+
+    Private Sub Button25_Click_1(sender As Object, e As EventArgs) Handles Button25.Click
+        IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\disconnect.bat"), "rasdial/d")
+        Dim connect As System.Diagnostics.Process
+        connect = New System.Diagnostics.Process()
+        connect.StartInfo.FileName = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\disconnect.bat"
+        connect.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+
+        connect.Start()
+        connect.WaitForExit()
+        WebBrowser1.Url = New Uri("https://whatismyipaddress.com/")
     End Sub
 End Class

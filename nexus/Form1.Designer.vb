@@ -33,6 +33,8 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button21 = New System.Windows.Forms.Button()
@@ -92,6 +94,7 @@ Partial Class Form1
         Me.WebBrowser1.Location = New System.Drawing.Point(165, 32)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(1350, 720)
         Me.WebBrowser1.TabIndex = 7
         '
@@ -137,6 +140,8 @@ Partial Class Form1
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Button25)
+        Me.Panel1.Controls.Add(Me.Button24)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -150,13 +155,37 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.IndianRed
-        Me.Label7.Location = New System.Drawing.Point(507, 10)
+        Me.Label7.Location = New System.Drawing.Point(434, 12)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label7.Size = New System.Drawing.Size(350, 24)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Anonymous Browsing Fast and Easy"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button25
+        '
+        Me.Button25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Button25.Image = Global.nexus.My.Resources.Resources.action_stop
+        Me.Button25.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button25.Location = New System.Drawing.Point(886, 12)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(95, 28)
+        Me.Button25.TabIndex = 2
+        Me.Button25.Text = "Disconnect"
+        Me.Button25.UseVisualStyleBackColor = True
+        '
+        'Button24
+        '
+        Me.Button24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Button24.Image = Global.nexus.My.Resources.Resources.action_go
+        Me.Button24.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button24.Location = New System.Drawing.Point(790, 12)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(90, 28)
+        Me.Button24.TabIndex = 1
+        Me.Button24.Text = "Connect"
+        Me.Button24.UseVisualStyleBackColor = True
         '
         'Button23
         '
@@ -554,4 +583,6 @@ Partial Class Form1
     Friend WithEvents Button23 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label7 As Label
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button25 As Button
 End Class

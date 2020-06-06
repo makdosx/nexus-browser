@@ -172,6 +172,9 @@
   <data name="arrow_right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_right1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="page_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_lock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wikipedia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wikipedia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,6 +183,9 @@
   </data>
   <data name="icon_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_home.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="action_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\action_go.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="google" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\google.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,6 +202,9 @@
   <data name="bing2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bing2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_get_world" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_get_world.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="microsoft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\microsoft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,7 +220,7 @@
   <data name="the-times1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\the-times.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_get_world" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_get_world.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="action_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\action_stop.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

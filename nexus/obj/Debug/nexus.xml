@@ -22,12 +22,22 @@ nexus
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:nexus.My.Resources.Resources.action_go">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:nexus.My.Resources.Resources.action_print">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:nexus.My.Resources.Resources.action_refresh_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:nexus.My.Resources.Resources.action_stop">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -128,6 +138,11 @@ nexus
 </summary>
 </member>
 <member name="P:nexus.My.Resources.Resources.ny_times">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:nexus.My.Resources.Resources.page_lock">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
