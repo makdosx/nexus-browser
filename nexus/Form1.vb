@@ -18,7 +18,18 @@
 '
 '
 
+Imports MySql.Data.MySqlClient
+Imports System.Net
+Imports System.Text.RegularExpressions
+Imports System.IO
+Imports System.Reflection
+
+
+
 Public Class Form1
+
+
+
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         WebBrowser1.GoForward()
     End Sub
@@ -36,14 +47,58 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        WebBrowser1.GoHome()
+        WebBrowser1.Url = New Uri("http://nexbrowser.c1.biz/")
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         WebBrowser1.Refresh()
     End Sub
 
+
+    Public Function GetExternalIP() As IPAddress
+        Dim lol As WebClient = New WebClient()
+        Dim str As String = lol.DownloadString("https://api.ipify.org")
+        Dim ip As String = str
+        Return IPAddress.Parse(ip)
+    End Function
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim MyIP As IPAddress = GetExternalIP()
+
+        Dim ip_allow As String = MyIP.ToString()
+
+        'Dim ip_date As String = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
+
+        Dim browser_fingerprint As String = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)"
+
+
+        Dim MysqlConn As MySqlConnection
+        Dim COMMAND As MySqlCommand
+
+        MysqlConn = New MySqlConnection
+        MysqlConn.ConnectionString =
+       "server=fdb20.biz.nf;userid=3117979_spymt;password=perla3#Aaa;database=3117979_spymt"
+        Dim READER As MySqlDataReader
+
+
+        Try
+            MysqlConn.Open()
+            Dim Query As String
+            Query = "insert into allowed_sec (ip, browser) values ('" & ip_allow & "', '" & browser_fingerprint & "')"
+            COMMAND = New MySqlCommand(Query, MysqlConn)
+            READER = COMMAND.ExecuteReader
+
+            'MessageBox.Show("Data Saved")
+            MysqlConn.Close()
+
+        Catch ex As MySqlException
+            'MessageBox.Show(ex.Message)
+        Finally
+            MysqlConn.Dispose()
+
+        End Try
 
     End Sub
 
@@ -52,7 +107,9 @@ Public Class Form1
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted_1(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
-        'WebBrowser1.Url = New Uri("https://ipinfo.io/what-is-my-ip")
+
+
+
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -67,6 +124,8 @@ Public Class Form1
         If e.KeyCode = Keys.Enter Then
             Button7.PerformClick()
         End If
+
+
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -102,18 +161,18 @@ Public Class Form1
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        WebBrowser1.Url = New Uri("https://www.bing.com/search?q=twitter")
+        WebBrowser1.Url = New Uri("https://mobile.twitter.com/")
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        WebBrowser1.Url = New Uri("https://www.facebook.com/")
+        WebBrowser1.Url = New Uri("https://mobile.facebook.com/")
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         WebBrowser1.Url = New Uri("https://www.instagram.com/")
     End Sub
 
-    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+    Private Sub Button15_Click(sender As Object, e As EventArgs)
         WebBrowser1.Url = New Uri("https://www.tiktok.com/")
     End Sub
 
@@ -134,7 +193,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
-        WebBrowser1.Url = New Uri("https://www.wikipedia.org/")
+        WebBrowser1.Url = New Uri("https://www.metapedia.org/")
     End Sub
 
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
@@ -165,39 +224,52 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
-        If Not IO.Directory.Exists(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector") Then
 
-            IO.Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector")
+    ' Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+    ' If Not IO.Directory.Exists(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector") Then
 
-
-        End If
+    '        IO.Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector")
 
 
-        IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.pbk"), "[VPN]" & vbNewLine & "MEDIA=rastapi" & vbNewLine & "Port=VPN2-0" & vbNewLine & "Device=WAN Miniport (IKEv2)" & vbNewLine & "DEVICE=vpn" & vbNewLine & "PhoneNumber=" & "ca222.vpnbook.com")
-        IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.bat"), "rasdial ""VPN"" " & "vpnbook" & " " & "dA9rJds" & " /phonebook:" & """" & System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.pbk" & """")
+    'End If
 
 
-        Dim connect As System.Diagnostics.Process
-        connect = New System.Diagnostics.Process()
-        connect.StartInfo.FileName = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.bat"
-        connect.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+    '   IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.pbk"), "[VPN]" & vbNewLine & "MEDIA=rastapi" & vbNewLine & "Port=VPN2-0" & vbNewLine & "Device=WAN Miniport (IKEv2)" & vbNewLine & "DEVICE=vpn" & vbNewLine & "PhoneNumber=" & "ca222.vpnbook.com")
+    '  IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.bat"), "rasdial ""VPN"" " & "vpnbook" & " " & "dA9rJds" & " /phonebook:" & """" & System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.pbk" & """")
 
-        connect.Start()
-        connect.WaitForExit()
 
-        WebBrowser1.Url = New Uri("https://whatismyipaddress.com/")
+    '   Dim connect As System.Diagnostics.Process
+    '   connect = New System.Diagnostics.Process()
+    '   connect.StartInfo.FileName = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\connection.bat"
+    '   connect.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+
+    '   connect.Start()
+    '   connect.WaitForExit()
+
+    '   WebBrowser1.Url = New Uri("https://whatismyipaddress.com/")
+    ' End Sub
+
+    ' Private Sub Button25_Click_1(sender As Object, e As EventArgs) Handles Button25.Click
+    '     IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\disconnect.bat"), "rasdial/d")
+    ' Dim connect As System.Diagnostics.Process
+    '     connect = New System.Diagnostics.Process()
+    '    connect.StartInfo.FileName = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\disconnect.bat"
+    '    connect.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+
+    '   connect.Start()
+    '   connect.WaitForExit()
+    '  WebBrowser1.Url = New Uri("https://whatismyipaddress.com/")
+    ' End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
     End Sub
 
-    Private Sub Button25_Click_1(sender As Object, e As EventArgs) Handles Button25.Click
-        IO.File.WriteAllText((System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\disconnect.bat"), "rasdial/d")
-        Dim connect As System.Diagnostics.Process
-        connect = New System.Diagnostics.Process()
-        connect.StartInfo.FileName = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\vpnconnector" & "\disconnect.bat"
-        connect.StartInfo.WindowStyle = ProcessWindowStyle.Normal
+    Private Sub Button24_Click(sender As Object, e As EventArgs)
 
-        connect.Start()
-        connect.WaitForExit()
-        WebBrowser1.Url = New Uri("https://whatismyipaddress.com/")
+    End Sub
+
+    Private Sub Button25_Click_1(sender As Object, e As EventArgs)
+
     End Sub
 End Class

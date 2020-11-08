@@ -33,8 +33,6 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button25 = New System.Windows.Forms.Button()
-        Me.Button24 = New System.Windows.Forms.Button()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button21 = New System.Windows.Forms.Button()
@@ -43,7 +41,6 @@ Partial Class Form1
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
@@ -83,7 +80,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label2.Location = New System.Drawing.Point(60, 220)
+        Me.Label2.Location = New System.Drawing.Point(60, 229)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 18)
         Me.Label2.TabIndex = 16
@@ -102,7 +99,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label3.Location = New System.Drawing.Point(62, 392)
+        Me.Label3.Location = New System.Drawing.Point(60, 374)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(53, 18)
         Me.Label3.TabIndex = 22
@@ -122,7 +119,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label5.Location = New System.Drawing.Point(49, 502)
+        Me.Label5.Location = New System.Drawing.Point(49, 489)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 18)
         Me.Label5.TabIndex = 27
@@ -140,8 +137,6 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Button25)
-        Me.Panel1.Controls.Add(Me.Button24)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -155,37 +150,13 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.IndianRed
-        Me.Label7.Location = New System.Drawing.Point(434, 12)
+        Me.Label7.Location = New System.Drawing.Point(464, 11)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label7.Size = New System.Drawing.Size(350, 24)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Anonymous Browsing Fast and Easy"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Button25
-        '
-        Me.Button25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Button25.Image = Global.nexus.My.Resources.Resources.action_stop
-        Me.Button25.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button25.Location = New System.Drawing.Point(886, 12)
-        Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(95, 28)
-        Me.Button25.TabIndex = 2
-        Me.Button25.Text = "Disconnect"
-        Me.Button25.UseVisualStyleBackColor = True
-        '
-        'Button24
-        '
-        Me.Button24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Button24.Image = Global.nexus.My.Resources.Resources.action_go
-        Me.Button24.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button24.Location = New System.Drawing.Point(790, 12)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(90, 28)
-        Me.Button24.TabIndex = 1
-        Me.Button24.Text = "Connect"
-        Me.Button24.UseVisualStyleBackColor = True
         '
         'Button23
         '
@@ -221,7 +192,7 @@ Partial Class Form1
         Me.Button21.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button21.Image = Global.nexus.My.Resources.Resources.skype
         Me.Button21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button21.Location = New System.Drawing.Point(45, 523)
+        Me.Button21.Location = New System.Drawing.Point(45, 510)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(96, 28)
         Me.Button21.TabIndex = 29
@@ -235,7 +206,7 @@ Partial Class Form1
         Me.Button20.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button20.Image = Global.nexus.My.Resources.Resources.messenger
         Me.Button20.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button20.Location = New System.Drawing.Point(45, 557)
+        Me.Button20.Location = New System.Drawing.Point(45, 544)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(96, 28)
         Me.Button20.TabIndex = 28
@@ -247,13 +218,13 @@ Partial Class Form1
         '
         Me.Button19.BackColor = System.Drawing.Color.Transparent
         Me.Button19.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button19.Image = Global.nexus.My.Resources.Resources.wikipedia
+        Me.Button19.Image = Global.nexus.My.Resources.Resources.metapedia
         Me.Button19.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button19.Location = New System.Drawing.Point(45, 724)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(96, 28)
         Me.Button19.TabIndex = 26
-        Me.Button19.Text = "Wikipedia"
+        Me.Button19.Text = "Metapedia"
         Me.Button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button19.UseVisualStyleBackColor = False
         '
@@ -263,7 +234,7 @@ Partial Class Form1
         Me.Button18.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button18.Image = Global.nexus.My.Resources.Resources.youtube
         Me.Button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button18.Location = New System.Drawing.Point(45, 413)
+        Me.Button18.Location = New System.Drawing.Point(45, 395)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(96, 28)
         Me.Button18.TabIndex = 24
@@ -277,7 +248,7 @@ Partial Class Form1
         Me.Button17.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button17.Image = Global.nexus.My.Resources.Resources.dailymotion
         Me.Button17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button17.Location = New System.Drawing.Point(45, 447)
+        Me.Button17.Location = New System.Drawing.Point(45, 429)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(96, 28)
         Me.Button17.TabIndex = 23
@@ -299,27 +270,13 @@ Partial Class Form1
         Me.Button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button16.UseVisualStyleBackColor = False
         '
-        'Button15
-        '
-        Me.Button15.BackColor = System.Drawing.Color.Transparent
-        Me.Button15.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button15.Image = Global.nexus.My.Resources.Resources.tiktok
-        Me.Button15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button15.Location = New System.Drawing.Point(45, 343)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(96, 28)
-        Me.Button15.TabIndex = 20
-        Me.Button15.Text = "TikTok"
-        Me.Button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button15.UseVisualStyleBackColor = False
-        '
         'Button14
         '
         Me.Button14.BackColor = System.Drawing.Color.Transparent
         Me.Button14.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button14.Image = Global.nexus.My.Resources.Resources.facebook
         Me.Button14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button14.Location = New System.Drawing.Point(45, 275)
+        Me.Button14.Location = New System.Drawing.Point(45, 284)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(96, 28)
         Me.Button14.TabIndex = 19
@@ -333,7 +290,7 @@ Partial Class Form1
         Me.Button13.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button13.Image = Global.nexus.My.Resources.Resources.instagram_color_icon_instagram_social_media_png_instagram_icon_11562851673w81euu4rop
         Me.Button13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button13.Location = New System.Drawing.Point(45, 309)
+        Me.Button13.Location = New System.Drawing.Point(45, 318)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(96, 28)
         Me.Button13.TabIndex = 18
@@ -347,7 +304,7 @@ Partial Class Form1
         Me.Button12.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button12.Image = Global.nexus.My.Resources.Resources.twitter1
         Me.Button12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button12.Location = New System.Drawing.Point(45, 241)
+        Me.Button12.Location = New System.Drawing.Point(45, 250)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(96, 28)
         Me.Button12.TabIndex = 17
@@ -393,7 +350,7 @@ Partial Class Form1
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(96, 28)
         Me.Button9.TabIndex = 13
-        Me.Button9.Text = "DuckDuckGo"
+        Me.Button9.Text = "DuckDuck"
         Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button9.UseVisualStyleBackColor = False
         '
@@ -518,7 +475,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button16)
-        Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
@@ -568,7 +524,6 @@ Partial Class Form1
     Friend WithEvents WebBrowser1 As WebBrowser
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
-    Friend WithEvents Button15 As Button
     Friend WithEvents Button16 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Button17 As Button
@@ -583,6 +538,4 @@ Partial Class Form1
     Friend WithEvents Button23 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button24 As Button
-    Friend WithEvents Button25 As Button
 End Class
