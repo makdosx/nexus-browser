@@ -127,6 +127,11 @@ nexus
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:nexus.My.Resources.Resources.metapedia">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:nexus.My.Resources.Resources.microsoft">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

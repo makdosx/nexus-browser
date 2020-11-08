@@ -22,3 +22,21 @@ C:\Users\Lab1\Desktop\nexus\nexus\bin\Debug\nexus.exe.config
 C:\Users\Lab1\Desktop\nexus\nexus\bin\Debug\nexus.exe
 C:\Users\Lab1\Desktop\nexus\nexus\bin\Debug\nexus.pdb
 C:\Users\Lab1\Desktop\nexus\nexus\bin\Debug\nexus.xml
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.exe.config
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\MySql.Data.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\Google.Protobuf.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\Zstandard.Net.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\Renci.SshNet.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\System.Memory.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\System.Buffers.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\MySql.Data.xml
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\obj\Debug\nexus.vbproj.CopyComplete
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\MySql.Web.dll
+C:\Users\Lab1\Desktop\web browser\nexus\nexus\bin\Debug\MySql.Web.xml
