@@ -172,6 +172,9 @@
   <data name="arrow_right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow_right1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="action_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\action_stop.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="page_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\page_lock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,7 +223,7 @@
   <data name="the-times1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\the-times.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="action_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\action_stop.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="metapedia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\metapedia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
