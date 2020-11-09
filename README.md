@@ -1,5 +1,5 @@
 # nexus-browser
-Nexus-Browser is a anonymous and vpn browser <br><br>
+Nexus-Browser is a private browser <br><br>
 
 Properties and Details <br><br>
 1) Supports all windows operating systems after windows xp <br> windows xp, vista, 7, 8, 8.1, 10 <br> 
