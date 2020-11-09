@@ -2,7 +2,7 @@
 
 /*
 *  Copyright (c) 2020 Barchampas Gerasimos <makindosxx@gmail.com>.
-*  nexus-browser is a anonymous and vpn browser.
+*  nexus-browser is a private browser.
 *
 *  nexus-browser is free software: you can redistribute it and/or modify
 *  it under the terms of the GNU Affero General Public License as published by
