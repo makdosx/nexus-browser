@@ -1,26 +1,3 @@
-<?php
-
-/*
-*  Copyright (c) 2020 Barchampas Gerasimos <makindosxx@gmail.com>.
-*  nexus-browser is a private browser.
-*
-*  nexus-browser is free software: you can redistribute it and/or modify
-*  it under the terms of the GNU Affero General Public License as published by
-*  the Free Software Foundation, either version 3 of the License, or
-*  (at your option) any later version.
-*
-*  nexus-browser is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*  GNU Affero General Public License for more details.
-*
-*  You should have received a copy of the GNU Affero General Public License
-*  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*
-*/
-
-?>
-
 <html>
 
 <head>
@@ -29,7 +6,7 @@
    <meta charset="utf-8">
   <title> Nexus Network </title>
 
-  <link rel="icon" type="image/png" href="http://nexbrowser.c1.biz/imgs/nexus.ico"/>
+  <link rel="icon" type="image/png" href="http://nex.com-world.gr/imgs/nexus.png"/>
 
 <style>
 body
@@ -41,9 +18,14 @@ color: white;
 a 
 {
 
-color: red;
+color: orange;
 }
 
+#a2
+{
+color: orange;
+}
+		
 
 </style>
 
@@ -156,8 +138,12 @@ $nexus_browser = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trid
 			    <hr> <br>
 	          <span style='font-size:200px;'> &#127760; &#128073; &#10060;</span>
 			    <br><br><br>
-	         <h2> <i> Get the <a href='https://github.com/makdosx/nexus-browser'> Nexus Browser </a> 
+	         <h2> <i> Get the <a href='https://github.com/makdosx/nexus-browser/raw/master/download/nexus.exe'> Nexus Browser </a> 
 			 for view this content! </i> </h2> 
+			<br> <br>
+			   <h2> 
+			     View Nexus Project <a href='https://github.com/makdosx/nexus-browser/' id='a2'> on Github </a> 
+			   </h2> 
 	       </div>";	   
 	 exit;	  
 	  }		
