@@ -23,3 +23,5 @@ Properties and Details <br><br>
 
 ![scr4](screenshots/scr4.png) <br/><br/><br/>
 
+![nexus_browser1](imgs/nexus_browser1.png) <br/><br/><br/>
+
