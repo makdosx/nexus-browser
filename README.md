@@ -1,6 +1,8 @@
 # nexus-browser
 Nexus-Browser is a private browser <br><br>
 
+<a href="https://github.com/makdosx/nexus-browser/raw/master/download/nexus.exe"> Download </a>
+
 Properties and Details <br><br>
 1) Supports all windows operating systems after windows xp <br> windows xp, vista, 7, 8, 8.1, 10 <br> 
 2) Private browsing
