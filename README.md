@@ -15,8 +15,11 @@ Properties and Details <br><br>
  
 <a href="download/nexus.exe"> Download </a> <br/>
 
-![nexus-browser1](imgs/nexus-browser1.png) <br/><br/></br>
+![scr11](screenshots/scr1.png) <br/><br/></br>
 
-![nexus-browser-vpn1](imgs/nexus-browser-vpn1.png) <br/><br/><br/> 
+![scr2](screenshots/scr2.png) <br/><br/><br/> 
 
-![nexus-browser-vpn2](imgs/nexus-browser-vpn2.png) <br/><br/><br/>
+![scr3](screenshots/scr3.png) <br/><br/><br/>
+
+![scr4](screenshots/scr4.png) <br/><br/><br/>
+
