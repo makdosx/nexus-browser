@@ -1,40 +1,3 @@
-<html>
-
-<head>
-
-
-   <meta charset="utf-8">
-  <title> Nexus Network </title>
-
-  <link rel="icon" type="image/png" href="http://nex.com-world.gr/imgs/nexus.png"/>
-
-<style>
-body
-{
-background-color: #341818;	
-color: white;
-}
-
-a 
-{
-
-color: orange;
-}
-
-#a2
-{
-color: orange;
-}
-		
-
-</style>
-
-
-</head>
-
-<body>
-
-
 <?php
 
 ini_set('display_errors', '0');
@@ -127,12 +90,17 @@ $nexus_browser = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trid
 
     if ($user_browser == $nexus_browser)
      {
+		// header('location: /');
       }
 
 
     else
      {
 
+     doStuff(); 
+	 __halt_compliler(); 
+
+	   /*
 	 echo "<div align='center'> 
 	        <h1> <font color='green'> Nexus Network! </font> <font color='red'> Hide Content! </font> </h2>
 			    <hr> <br>
@@ -145,12 +113,9 @@ $nexus_browser = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trid
 			     View Nexus Project <a href='https://github.com/makdosx/nexus-browser/' id='a2'> on Github </a> 
 			   </h2> 
 	       </div>";	   
-	 exit;	  
+		   */
+	 //exit;	  
 	  }		
 		
 
 ?>
-
-
-</body>
-</html>
