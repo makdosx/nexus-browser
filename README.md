@@ -1,7 +1,10 @@
 # nexus-browser
 Nexus-Browser is a private browser <br><br>
 
-<a href="https://github.com/makdosx/nexus-browser/raw/master/download/nexus.exe"> Download </a>
+i) Download zip file <br><br>
+ii) Exatract and run from folder the nexus.exe file <br><br>
+
+<a href="https://github.com/makdosx/nexus-browser/raw/master/download/nexus-browser.zip"> Download </a> <br><br>
 
 Properties and Details <br><br>
 1) Supports all windows operating systems after windows xp <br> windows xp, vista, 7, 8, 8.1, 10 <br> 
@@ -17,7 +20,6 @@ Properties and Details <br><br>
 11) Print your data and connect to your printer <br>
 12) Fast easy and simple graphical interface for use <br>
  
-<a href="download/nexus.exe"> Download </a> <br/>
 
 ![scr11](screenshots/scr1.png) <br/><br/></br>
 
