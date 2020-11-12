@@ -2,7 +2,7 @@
 Nexus-Browser is a private browser <br><br>
 
 i) Download the zip file <br>
-ii) Extract and run from folder the nexus.exe file <br>
+ii) Extract and run from nexus-browser folder the nexus.exe file <br>
 
 <a href="https://github.com/makdosx/nexus-browser/raw/master/download/nexus-browser.zip"> Download </a> <br><br>
 
